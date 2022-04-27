@@ -1,0 +1,16 @@
+{
+  "name": "inner",
+  "collaborators": [
+    "Marcelo Vogt <marcelinho.vogt@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "inner_bg.wasm",
+    "inner.js",
+    "inner_bg.js",
+    "inner.d.ts"
+  ],
+  "module": "inner.js",
+  "types": "inner.d.ts",
+  "sideEffects": false
+}

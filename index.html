@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/browse/normalize.css@8.0.1/normalize.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script defer src="./bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="sidebar">
+          <h1>M43Lang</h1>
+          <div class="create">
+          </div>
+          <div class="config"></div>
+          <div class="buttons">
+              <button onclick="compile_code()" id="compile">Compile</button>
+              <button onclick="run_code()" id="run">Run</button>
+              <button onclick="test_code()" id="test">Test</button>
+              <button onclick="debug_code()" id="debug">Debug</button>
+          </div>
+          <div class="spacer"></div>
+          <div class="files">
+              <button onclick="download()">Download</button>
+              <button onclick="upload()">Upload</button>
+              <button onclick="saveas()">Save As</button>
+              <button onclick="load()">Load</button>
+              <button onclick="show_saves()" class="two-column">Show Saves</button>
+          </div>
+          <div class="console">
+              <textarea id="console" disabled></textarea>
+              <div class="buttons">
+                  <button id="clear" onclick="clear_console()">Clear</button>
+                  <button id="clear-all" onclick="clear_all()">Clear All</button>
+              </div>
+          </div>
+      </div>
+      <main></main>
+    </div>
+    <div class="debug-bar" style="display: none;">DEBUGGER</div>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+  </body>
+</html>

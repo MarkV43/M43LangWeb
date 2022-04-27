@@ -1,0 +1,189 @@
+{
+    "blockTypes": {
+        "Start": {
+            "display": "Start",
+            "color": "#00FF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": ["dir"]
+        },
+        "Redirect": {
+            "display": "Redirect",
+            "color": "#FF0000",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["dir"]
+        },
+        "Store": {
+            "display": "Store",
+            "color": "#FFFF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "Load": {
+            "display": "Load",
+            "color": "#00FFFF",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "Set": {
+            "display": "Set",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["val"]
+        },
+        "Save": {
+            "display": "Save",
+            "color": "#00FF00",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["val"]
+        },
+        "Swap": {
+            "display": "Swap",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "Increment": {
+            "display": "Increment",
+            "color": "#FF0000",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["val"]
+        },
+        "Decrement": {
+            "display": "Decrement",
+            "color": "#FFFF00",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["val"]
+        },
+        "MoveRight": {
+            "display": "-->",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["ind"]
+        },
+        "MoveLeft": {
+            "display": "<--",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["ind"]
+        },
+        "Goto": {
+            "display": "Goto",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 20,
+            "data": ["ind"]
+        },
+        "OpAdd": {
+            "display": "+",
+            "color": "#00FF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "OpSub": {
+            "display": "-",
+            "color": "#FF0000",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "OpMul": {
+            "display": "*",
+            "color": "#FFFF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "OpDiv": {
+            "display": "/",
+            "color": "#00FFFF",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "CompLarger": {
+            "display": ">",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "CompSmaller": {
+            "display": "<",
+            "color": "#00FF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "CompEqual": {
+            "display": "==",
+            "color": "#FF0000",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "Conditional": {
+            "display": "?",
+            "color": "#FFFF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": ["dir", "dir"]
+        },
+        "Display": {
+            "display": "Display",
+            "color": "#00FFFF",
+            "textColor": "#000000",
+            "textSize": 24,
+            "data": []
+        },
+        "Print": {
+            "display": "Print",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "Break": {
+            "display": "Break",
+            "color": "#FF00FF",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "Input": {
+            "display": "Input",
+            "color": "#00FF00",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        },
+        "End": {
+            "display": "End",
+            "color": "#FF0000",
+            "textColor": "#000000",
+            "textSize": 30,
+            "data": []
+        }
+    },
+    "dirTypes": {
+        "values": [
+            "Up",
+            "Down",
+            "Left",
+            "Right"
+        ],
+        "default": "Down"
+    },
+    "arrowColors": ["#000000", "#FFFFFF"]
+}

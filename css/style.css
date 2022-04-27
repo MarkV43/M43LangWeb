@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@300;400&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(24, 26, 27);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.debug-bar {
+    background-color: white;
+    height: 4rem;
+    z-index: 2;
+}
+
+.sidebar {
+    background-color: rgb(24, 26, 27);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    max-height: 100vh;
+    /* z-index: 100; */
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar > .create {
+    width: 100%;
+}
+
+.sidebar  button {
+    font-size: 1rem;
+    background: rgb(24, 26, 27);
+    color: #eee;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+    margin: 0.3rem;
+    filter: drop-shadow(0 0 0.75rem black);
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+    transform-origin: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.sidebar button:hover {
+    background: rgb(20, 22, 23);
+    transform: scale(1.05);
+}
+
+.sidebar > .config {
+    width: 100%;
+}
+
+.sidebar #compile {
+    background:rgb(24, 26, 50);
+}
+
+.sidebar #compile:hover {
+    background: rgb(20, 22, 45);
+}
+
+.sidebar #run {
+    background:rgb(24, 50, 27);
+}
+
+.sidebar #run:hover {
+    background: rgb(20, 45, 23);
+}
+
+.sidebar #test {
+    background:rgb(50, 50, 27);
+}
+
+.sidebar #test:hover {
+    background: rgb(45, 45, 23);
+}
+
+.sidebar #debug {
+    background-color:rgb(40, 20, 20);
+}
+
+.sidebar #debug:hover {
+    background-color:rgb(35, 16, 17);
+}
+
+.sidebar .spacer {
+    flex-grow: 1;
+}
+
+.sidebar .files {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sidebar .files .two-column {
+    grid-column: span 2;
+}
+
+.sidebar .console {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .console #console {
+    flex-grow: 1;
+    background: rgb(24, 26, 27);
+    color: #eee;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+    margin: 0.3rem;
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    cursor: text;
+    transition: 150ms ease-in-out;
+    transform-origin: center;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 200;
+    min-height: 5em;
+}
+
+.sidebar .console .buttons {
+    display: grid;
+    width: 50%;
+}
+
+.sidebar .console #clear-all {
+    background-color:rgb(40, 20, 20);
+}
+
+.sidebar .console #clear-all:hover {
+    background-color:rgb(35, 16, 17);
+}
