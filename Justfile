@@ -3,7 +3,7 @@ alias t := test
 alias c := check
 
 build:
-    wasm-pack build ./m43lang/inner --debug -d ../../wasm
+    wasm-pack build ../m43lang-wasm --debug -d ../m43lang-web/wasm
     rm ./wasm/.gitignore
 
 test:

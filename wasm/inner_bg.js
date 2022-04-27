@@ -402,6 +402,11 @@ export class M43State {
     }
 }
 
+export function __wbindgen_number_new(arg0) {
+    const ret = arg0;
+    return addHeapObject(ret);
+};
+
 export function __wbg_prompt_19dfb477cd0de5d2() { return logError(function (arg0, arg1, arg2) {
     const ret = prompt(getStringFromWasm0(arg1, arg2));
     const ptr0 = passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
@@ -417,11 +422,6 @@ export function __wbg_printtoconsole_02b8612803eacabe() { return logError(functi
         wasm.__wbindgen_free(arg0, arg1);
     }
 }, arguments) };
-
-export function __wbindgen_number_new(arg0) {
-    const ret = arg0;
-    return addHeapObject(ret);
-};
 
 export function __wbg_error_09919627ac0992f5() { return logError(function (arg0, arg1) {
     try {
